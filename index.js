@@ -15,6 +15,10 @@ consign()
 
 app.db = db
 
+app.get('/', (req, res) => {
+    res.send('ONLINE')
+})
+
 app.listen(3000, () => {
     console.log('Serving on port 3000...')
 })
